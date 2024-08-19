@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black; 
+}
+
+#title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    z-index: 1; 
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(''); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: 0;
+}
+
+#button-container {
+    position: absolute;
+    top: 100px; /* Adjust this value to position the buttons lower or higher */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    z-index: 1; /* Ensure buttons appear above the particles and background */
+}
+
+/* Button styling */
+.button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #6f6d6d; /* Button color */
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 150px; /* Fixed width for buttons */
+}
+
+.button:hover {
+    background-color: #ffffff; /* Button color on hover */
+}
